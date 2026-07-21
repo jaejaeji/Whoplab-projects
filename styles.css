@@ -1,0 +1,89 @@
+body {
+    background-image: url(https://images.pexels.com/photos/34924697/pexels-photo-34924697.jpeg);
+    background-size: cover;
+    height: 2000px;
+}
+
+header {
+    font-family: "Rubik Marker Hatch", sans-serif;
+    font-size: 100px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.box {
+    /* Ways to center bentobox #1 */
+    display: flexbox;
+    justify-content: center;
+    /* Ways to center bentobox #2 */
+    /* display: grid;
+    place-items: center; */
+
+    /* Center bentobox and fix */
+    position: fixed;
+    left: 25%;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 10px;
+    grid-template-areas:
+        "R R R P P P T T"
+        "R R R P P P T T"
+        "R R R P P P T T"
+        "V V V V S S M M"
+        "V V V V S S M M";
+    background-color: lightpink;
+    width: fit-content;
+    padding: 20px;
+    /* Ways to center bentobox #3 (not conventional way, only centers horizontally, can potentially give error */
+    /* margin: 0 auto; */
+    border-radius: 20px;
+    font-family: "Tilt Neon", sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.R {
+    /* grid-column: span 3;
+    grid-row: span 3;
+    grid-column-start: 1;
+    grid-column-end: 8; */
+    grid-area: R;
+    background: lightblue;
+    border-color: gold;
+    border: 5px 5px 5px 5px gold;
+}
+
+.P {
+    grid-area: P;
+    background: lightsalmon;
+}
+
+.T {
+    grid-area: T;
+    background: lightyellow;
+}
+
+.V {
+    grid-area: V;
+    background: lightgreen;
+
+}
+
+.S {
+    grid-area: S;
+    background: brown;
+
+}
+
+.M {
+    grid-area: M;
+    background: lightgray;
+}
+
+
