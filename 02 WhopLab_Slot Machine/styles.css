@@ -1,0 +1,117 @@
+
+html {
+    background-color: #57C785;
+}
+
+h1 {
+    color: yellow;
+}
+
+.heading {
+    display: flex;
+    background-color: #4AB18B;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.slots {
+    display: flex;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+}
+
+.buttons {
+    background-color: #4AB18B;
+    border: 5px, yellow;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.spin_once {
+  text-align: center;
+  color: black;
+  background-color: #cecc5d;
+  border-radius: 15px;
+  box-shadow: 0 2px #999;
+  padding: 15px;
+  width: 80px;
+}
+
+.spin_once:hover {background-color: #9eb14c}
+
+.spin_once:active {
+  background-color: #cecc5d;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+.text {
+    padding: 15px;
+    margin: 15px;
+}
+
+.simulate_spins {
+  text-align: center;
+  color: black;
+  background-color: #cecc5d;
+  border-radius: 15px;
+  box-shadow: 0 2px #999;
+  padding: 15px;
+  width: 80px;
+}
+
+.simulate_spins:hover {background-color: #9eb14c}
+
+.simulate_spins:active {
+  background-color: #cecc5d;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+.end {
+    background-color: #4AB18B;
+    color: yellow;
+    border: 5px, yellow;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.total {
+    display: flex;
+    background-color: #5aaf90;
+    color: yellow;
+    padding: 20px;
+    margin: 5px;
+    justify-content: space-between;
+}
+
+.total_spins {
+    display: flex;
+    background-color: #235f49;
+    color: yellow;
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+}
+
+.total_wins {
+    display: flex;
+    background-color: #235f49;
+    color: yellow;
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+}
+
+.win_rate {
+    display: flex;
+    background-color: #235f49;
+    color: yellow;
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+}

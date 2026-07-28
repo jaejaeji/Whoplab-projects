@@ -1,0 +1,110 @@
+* {
+    /* background: linear-gradient(180deg,rgba(42, 36, 43, 1) 0%, rgba(128, 33, 99, 1) 100%); */
+}
+
+.heading {
+    display: flex;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(42, 36, 43, 1) 28%);
+    color: white;
+    padding: 20px;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p1_name {
+    display: flex;
+    color: white;
+    margin: 5px;
+}
+
+.p1_healthbar {
+    display: flex;
+    background-color: red;
+    border-color: white;
+    border: 5px;
+    padding: 20px;
+    margin: 5px;
+    width: 600px;
+    height: 3px;
+}
+
+.vs {
+    /* align-items: center; */
+    font-size: 40px;
+    color: #d4d249;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5)
+}
+
+.p2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.p2_name {
+    display: flex;
+    color: white;
+    margin: 5px;
+    width: 100px;
+}
+
+.p2_healthbar {
+    display: flex;
+    background-color: red;
+    padding: 20px;
+    margin: 5px;
+    width: 600px;
+}
+
+
+.arena {
+    display: flex;
+    background: linear-gradient(180deg,rgba(42, 36, 43, 1) 0%, rgba(128, 33, 99, 1) 100%);
+    color: white;
+    padding: 20px;
+    justify-content: space-between;
+    height: auto;
+}
+
+
+.fight_start {
+    /* align-items: center; */
+    font-size: 40px;
+}
+
+
+.end {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.start_button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #d3d16f;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.start_button:hover {background-color: #9eb14c}
+
+.start_button:active {
+  background-color: #d3d16f;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
