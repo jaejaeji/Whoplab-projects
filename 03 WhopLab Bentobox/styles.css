@@ -14,7 +14,7 @@ header {
 
 .box {
     /* Ways to center bentobox #1 */
-    display: flexbox;
+    display: flex;
     justify-content: center;
     /* Ways to center bentobox #2 */
     /* display: grid;
@@ -23,7 +23,6 @@ header {
     /* Center bentobox and fix */
     position: fixed;
     left: 25%;
-
 }
 
 .grid-container {
@@ -48,6 +47,26 @@ header {
     text-align: center;
 }
 
+.grid-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    /* object-position: center; */
+
+    position: absolute;
+    inset: 0;
+}
+
+.M .grid-image {
+    border-radius: 100%;
+}
+
+div {
+    border-radius: 20px;
+}
+
+
 .R {
     /* grid-column: span 3;
     grid-row: span 3;
@@ -70,18 +89,51 @@ header {
 .V {
     grid-area: V;
     background: lightgreen;
-
 }
 
 .S {
     grid-area: S;
     background: brown;
-
 }
 
 .M {
     grid-area: M;
     background: lightgray;
+    border-radius: 100%;
 }
 
+.R,
+.P,
+.T,
+.V,
+.S,
+.M {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    position: relative;    
+    overflow: hidden;
+}
+
+.R span,
+.P span,
+.T span,
+.V span,
+.S span,
+.M span {
+    position: relative;
+    
+    /* top: 0%;
+    left: 0%; */
+
+    color:antiquewhite;
+    font-size: 40px;
+    font-weight: bold;
+
+    z-index: 1;
+}
+
+.R span {
+    color: black;
+}
