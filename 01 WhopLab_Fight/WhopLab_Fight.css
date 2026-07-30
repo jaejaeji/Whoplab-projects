@@ -1,19 +1,34 @@
-* {
-    /* background: linear-gradient(180deg,rgba(42, 36, 43, 1) 0%, rgba(128, 33, 99, 1) 100%); */
+
+/* Give body full-screen gradient instead of instead of sections */
+body {
+    background:
+    radial-gradient(circle at 50% 10%,
+    rgba(255,255,255,.35),
+    rgba(255,255,255,0) 18%),
+
+    linear-gradient(
+        180deg,
+        #181824 0%,
+        #2a2338 45%,
+        #402b3a 100%
+    );
 }
 
+/* Use vh instead of fixed height to adjust with window size (100vh is full window) */
 .heading {
     display: flex;
-    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(42, 36, 43, 1) 28%);
+    /* background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(42, 36, 43, 1) 28%); */
     color: white;
-    padding: 20px;
+    padding: 20px 50px;
     justify-content: space-between;
-    height: 400px;
+    align-items: flex-start;
+    height: 15vh;
 }
 
 .p1 {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 .p1_name {
@@ -22,19 +37,28 @@
     margin: 5px;
 }
 
-.p1_healthbar {
+/* Insert player healthbar inside a fixed container "healthbar" so other parts don't move when healthbar width is changed */
+.healthbar {
+    display: flex;
+    background-color: grey;
+    /* padding: 20px; */
+    /* margin: 5px; */
+    width: 600px;
+    height: 50px;
+    border: 2px solid white;
+}
+
+.p1_healthbar,
+.p2_healthbar {
     display: flex;
     background-color: red;
-    border-color: white;
-    border: 5px;
-    padding: 20px;
-    margin: 5px;
-    width: 600px;
-    height: 3px;
+    width: 100%;
+    height: 100%;
 }
 
 .vs {
-    /* align-items: center; */
+    display: flex;
+    justify-content: center;
     font-size: 40px;
     color: #d4d249;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5)
@@ -43,7 +67,7 @@
 .p2 {
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    /* justify-content: flex-end; */
 }
 
 .p2_name {
@@ -53,24 +77,26 @@
     width: 100px;
 }
 
-.p2_healthbar {
-    display: flex;
-    background-color: red;
-    padding: 20px;
-    margin: 5px;
-    width: 600px;
-}
-
 
 .arena {
     display: flex;
-    background: linear-gradient(180deg,rgba(42, 36, 43, 1) 0%, rgba(128, 33, 99, 1) 100%);
+    /* background: linear-gradient(180deg,rgba(42, 36, 43, 1) 0%, rgba(128, 33, 99, 1) 100%); */
     color: white;
     padding: 20px;
     justify-content: space-between;
     height: auto;
+    align-items: center;   
+    height: auto; 
 }
 
+/* Set margin-bottom to adjust player position, width set with vw to adjust with window size. */
+.p1_image,
+.p2_image {
+    margin-bottom: 200px;
+    width:18vw;
+    max-width:350px;
+    min-width:180px;
+}
 
 .fight_start {
     /* align-items: center; */
@@ -80,12 +106,13 @@
 
 .end {
     display: flex;
-    background-color: black;
+    background-image: linear-gradient(90deg, #262020 25%, #383333 25%, #383333 50%, #262020 50%, #262020 75%, #383333 75%, #383333 100%);
+    background-size: 120.00px 120.00px;
     color: white;
     padding: 20px;
     justify-content: center;
     align-items: center;
-    height: 120px;
+    height: 10vh;
 }
 
 .start_button {
