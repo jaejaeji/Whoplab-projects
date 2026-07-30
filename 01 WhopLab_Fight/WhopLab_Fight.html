@@ -4,20 +4,26 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=0">
         <link rel="stylesheet" type="text/css" href="WhopLab_Fight.css">
+        <script src="script.js"></script>
     </head>
 
     <body>
         <div class="heading">
             <div class="p1">
                 <div class="p1_name">Player 1</div>
-                <div class="p1_healthbar"></div>
+                <div class="healthbar">
+                    <div id="p1_healthbar" class="p1_healthbar"></div>
+                </div>
+                <!-- <meter min="0" max="100" optimum="80" low="33" high="66" value="10" width=""></meter> -->
             </div>
 
             <div class="vs">VS</div>
 
             <div class="p2">
                 <div class="p2_name">Player 2</div>
-                <div class="p2_healthbar"></div>
+                <div class="healthbar">
+                    <div id="p2_healthbar" class="p2_healthbar"></div>
+                </div>
             </div>
         </div>
 
@@ -25,18 +31,16 @@
             <img class="p1_image"
                 src = "./samurai-archer-attack-first-2-of-5.webp"
                 alt = "Player 1 Image"
-                width = "400"
             />
-            <div class="fight_start">Fight!</div>
+            <div id="fight_start" class="fight_start">WhopLab!</div>
             <img class="p2_image"
                 src = "./skeleton-attack-first-1-of-5.webp"
                 alt = "Player 2 Image"
-                width = "400"
             />
         </div>
 
         <div class="end">
-            <div class="start_button">Start Battle</div>
+            <button id="fight" class="start_button" onclick="fight()">Start Battle</button>
         </div>
     </body>
 </html>
