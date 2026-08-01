@@ -22,7 +22,7 @@ body {
     padding: 20px 50px;
     justify-content: space-between;
     align-items: flex-start;
-    height: 15vh;
+    height: 30vh;
 }
 
 .p1 {
@@ -84,9 +84,7 @@ body {
     color: white;
     padding: 20px;
     justify-content: space-between;
-    height: auto;
     align-items: center;   
-    height: auto; 
 }
 
 /* Set margin-bottom to adjust player position, width set with vw to adjust with window size. */
@@ -107,7 +105,7 @@ body {
 .end {
     display: flex;
     background-image: linear-gradient(90deg, #262020 25%, #383333 25%, #383333 50%, #262020 50%, #262020 75%, #383333 75%, #383333 100%);
-    background-size: 120.00px 120.00px;
+    background-size: 10vh 10vh;
     color: white;
     padding: 20px;
     justify-content: center;
